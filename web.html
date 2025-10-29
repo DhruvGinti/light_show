@@ -7,8 +7,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --glow-color-1: #ff00ff; /* Magenta */
-            --glow-color-2: #00ffff; /* Cyan */
+            --glow-color-1: #ff00ff; 
+            --glow-color-2: #00ffff; 
         }
 
         body {
@@ -240,7 +240,7 @@
             transform: scale(1.05);
         }
 
-        /* --- MODERN PLAYER STYLES START --- */
+        /* MODERN PLAYER STYLES START */
         .player-container {
             width: 90%;
             max-width: 500px;
@@ -296,7 +296,7 @@
             background: linear-gradient(90deg, var(--glow-color-2), var(--glow-color-1));
             border-radius: 3px;
             position: relative;
-            pointer-events: none; /* Allows clicks to go through to the parent bar */
+            pointer-events: none; 
         }
 
         .player-container .thumb {
@@ -315,7 +315,7 @@
         }
 
         .player-container .progress-bar:hover .thumb {
-            opacity: 1; /* Show thumb on hover */
+            opacity: 1; 
         }
 
         .player-container .volume-control {
@@ -353,9 +353,8 @@
             border: none;
             box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
         }
-        /* --- MODERN PLAYER STYLES END --- */
+        
 
-        /* Hide original audio player if it shows up */
         audio {
             display: none;
         }
@@ -375,11 +374,10 @@
             .preset-btn { padding: 6px 14px; font-size: 12px; }
             #resetEqBtn { padding: 8px 25px; font-size: 14px; }
 
-            /* --- FIX FOR PLAYER OVERFLOW --- */
+            
             .player-container { padding: 10px 15px; }
             .player-container .controls { gap: 10px; }
             
-            /* On smaller screens, hide the slider and just show the mute button */
             .player-container .volume-slider {
                 display: none;
             }
@@ -397,9 +395,9 @@
         </div>
         <div id="eqControls">
             <div id="presetsContainer">
-                <button class="preset-btn" data-preset="bass">Bass Boost</button>
-                <button class="preset-btn" data-preset="vocal">Vocal</button>
-                <button class="preset-btn" data-preset="treble">Treble</button>
+                <button class="preset-btn" data-preset="bass">BASS</button>
+                <button class="preset-btn" data-preset="vocal">VOCAL</button>
+                <button class="preset-btn" data-preset="treble">TREBLE</button>
             </div>
             <button id="resetEqBtn">Reset</button>
         </div>
